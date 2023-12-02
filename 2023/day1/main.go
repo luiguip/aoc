@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"strings"
 	"unicode"
+
+	"github.com/luiguip/aoc/internal"
 )
 
 var numMap = map[string]string{
@@ -21,11 +22,7 @@ var numMap = map[string]string{
 }
 
 func main() {
-	data, err := os.ReadFile("./2023/day1/input.txt")
-	if err != nil {
-		panic(err)
-	}
-	text := string(data)
+	text := internal.ReadFile("./2023/day1/input.txt")
 	fmt.Println(part1(text))
 	fmt.Println(part2(text))
 }

@@ -12,8 +12,8 @@ type color string
 
 const (
 	red   color = "red"
-	blue        = "blue"
-	green       = "green"
+	blue  color = "blue"
+	green color = "green"
 )
 
 type record map[color]int

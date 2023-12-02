@@ -80,7 +80,7 @@ func parseGame(line string) *game {
 
 func parseGameId(line string) (int, string) {
 	splitted := strings.Split(line, ":")
-	rawId := strings.Trim(strings.Split(splitted[0], " ")[1], " ")
+	rawId := strings.Split(splitted[0], " ")[1]
 	id, err := strconv.Atoi(rawId)
 	internal.PanicOnError(err)
 	return id, splitted[1]

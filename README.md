@@ -1,3 +1,3 @@
 # Advent of Code
 
-Inputs are removed to not provide spoilers
+Advent of Code in go

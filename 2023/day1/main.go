@@ -21,7 +21,7 @@ var numMap = map[string]string{
 }
 
 func main() {
-	data, err := os.ReadFile("./day1/input.txt")
+	data, err := os.ReadFile("./2023/day1/input.txt")
 	if err != nil {
 		panic(err)
 	}

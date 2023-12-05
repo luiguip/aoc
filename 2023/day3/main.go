@@ -105,7 +105,6 @@ func findNumbers(matrix [][]rune, j int, i int) []int {
 	for jj := j - 1; jj <= j+1; jj++ {
 		for ii := i - 1; ii <= i+1; ii++ {
 			if jj >= 0 && ii >= 0 && jj < len(matrix) && ii < len(matrix[j]) && unicode.IsDigit(matrix[jj][ii]) {
-				// rawNumber = append(rawNumber, matrix[jj][ii])
 				var rawNumber []rune
 				rawNumber, ii = extractRawNumber(matrix[jj], ii)
 				number, err := strconv.Atoi(string(rawNumber))

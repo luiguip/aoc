@@ -72,7 +72,7 @@ func toScore2(line string, copies map[int]int, i int) map[int]int {
 }
 
 func initCopies(size int) map[int]int {
-	copies := map[int]int{}
+	copies := make(map[int]int, size)
 	for i := 0; i < size; i++ {
 		copies[i] = 1
 	}

@@ -88,9 +88,9 @@ func parseGameId(line string) (int, string) {
 
 func parseRecords(info string) []record {
 	rawRecords := strings.Split(info, ";")
-	records := []record{}
-	for _, rs := range rawRecords {
-		records = append(records, parseRecord(rs))
+	records := make([]record, len(rawRecords))
+	for i := range rawRecords {
+		records[i] = parseRecord(rawRecords[i])
 	}
 	return records
 }
